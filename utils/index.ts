@@ -15,5 +15,5 @@ export function shouldEnterManualMode(train: LuaTrain): boolean {
   const records = train.schedule?.records
   const current = train.schedule?.current
 
-  return records !== undefined && current !== undefined && isDefaultTemporaryStop(records[current])
+  return records !== undefined && current !== undefined && isDefaultTemporaryStop(records[current-1])
 }
