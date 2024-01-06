@@ -10,7 +10,7 @@ echo "$VERSION" > VERSION_FILE
 
 # Create a zip archive
 uploadStash=$(git stash create);
-git archive --format=zip --output="HandCraftingPriorityPlus_$VERSION.zip" --prefix="HandCraftingPriorityPlus_$VERSION/" --worktree-attributes "${uploadStash:-HEAD}"
+git archive --format=zip --output="TemporaryStopManual_$VERSION.zip" --prefix="TemporaryStopManual_$VERSION/" --worktree-attributes "${uploadStash:-HEAD}"
 
 # Get the current changelog as description
 changelog=$(cat changelog.txt)

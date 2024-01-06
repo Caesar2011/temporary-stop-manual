@@ -9,7 +9,7 @@ VERSION=$(grep -o '"version": "[^"]*"' ./info.json | awk -F'"' '{print $4}')
 
 # Create a zip archive
 uploadStash=$(git stash create);
-git archive --format=zip --output="HandCraftingPriorityPlus_$VERSION.zip" --prefix="HandCraftingPriorityPlus_$VERSION/" --worktree-attributes "${uploadStash:-HEAD}"
+git archive --format=zip --output="TemporaryStopManual_$VERSION.zip" --prefix="TemporaryStopManual_$VERSION/" --worktree-attributes "${uploadStash:-HEAD}"
 
 # Check if cmd.exe exists
 if command -v cmd.exe &> /dev/null; then
@@ -26,7 +26,7 @@ if command -v cmd.exe &> /dev/null; then
     WIN_APPDATA=$(echo "$WIN_APPDATA" | sed 's|^\([A-Z]\):|/mnt/\L\1|')
 
     # Copy the zip file to the Factorio mods folder
-    cp HandCraftingPriorityPlus_*.zip "$WIN_APPDATA/Factorio/mods/"
+    cp TemporaryStopManual_*.zip "$WIN_APPDATA/Factorio/mods/"
 
     cmd.exe /c start steam://rungameid/427520 &> /dev/null
 else

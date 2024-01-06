@@ -1,11 +1,11 @@
 {
-  "name": "HandCraftingPriorityPlus",
-  "version": "1.1.1",
-  "title": "Hand Crafting Priority Plus",
+  "name": "TemporaryStopManual",
+  "version": "0.1.0",
+  "title": "Temporary Stop Manual Mode",
   "contact": "",
   "author": "Caesar2011",
-  "homepage": "https://github.com/Caesar2011/crafting-priority",
-  "description": "This mod makes hand crafting more convenient by adding the ability to demote, promote, and reset the crafting queue.",
+  "homepage": "https://github.com/Caesar2011/temporary-stop-manual",
+  "description": "This mod simply switches the train mode to manual when arriving at a temporary station.",
   "dependencies": [
     "base >= 1.0"
   ],
